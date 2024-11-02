@@ -1,0 +1,162 @@
+.relative {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.absolute {
+  position: absolute;
+}
+/* main image */
+.custom-image-height {
+  height: 700px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the specified height while maintaining aspect ratio */
+}
+
+/* hero section h1 */
+.text-shadow {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+  font-weight: 700;
+  font-size: 3rem;
+}
+.hero-paragraph {
+  font-size: 1.5rem;
+  background-color: gray;
+}
+.hero-paragraph span {
+  text-shadow: 4px 4px 2px rgb(255, 255, 255);
+  text-decoration: underline;
+}
+/* h1 size changing according to screen size */
+.custom-heading {
+  font-size: 4rem; /* Default size for large devices */
+}
+.custom-paragraph {
+  padding: 10px;
+  display: inline;
+  font-size: 1.3rem;
+  background-color: rgb(27, 26, 26);
+}
+@media (max-width: 821px) {
+  .custom-heading {
+    font-size: 2.5rem; /* Size for medium devices */
+  }
+  .custom-paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-heading {
+    font-size: 2rem; /* Size for small devices */
+  }
+  .custom-paragraph {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .custom-heading {
+    font-size: 1.7rem; /* Size for small devices */
+  }
+  .custom-paragraph {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+}
+/* carousel.css */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.carousel-img {
+  max-height: 200px;
+  background-color: red;
+}
+
+/*Carousel Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  flex: 0 0 auto; /* Prevent the image from stretching */
+}
+
+.card-body {
+  flex: 1 1 auto; /* Allow the body to grow and shrink */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body > * {
+  margin-bottom: auto;
+}
+
+.card-body .btn {
+  margin-top: auto; /* Align the button to the bottom of the card body */
+}
+.carousel .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.carousel .col-md-3,
+.carousel .col-md-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card {
+  margin-bottom: 10px; /* Optional: adjust the bottom margin for spacing */
+}
+
+/* Home page second image */
+.home-second-img img {
+  max-height: 600px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the specified height while maintaining aspect ratio */
+  width: 100%; /* Ensure the image takes up the full width of its container */
+}
+
+/* Carousel */
+.carousel-control-prev {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* left: -60px; */
+}
+
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* right: -60px; */
+}
+
+@media (max-width: 760px) {
+  .carousel-heading {
+    margin: 2px 0;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* Admin Booking Table Responsive */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Find Booking Max Width */
+.max-width {
+  max-width: 1000px;
+}

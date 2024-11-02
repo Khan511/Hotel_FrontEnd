@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px; /* adjust based on your needs */
+}
+
+.table td:hover {
+  overflow: visible;
+  white-space: normal;
+}
+.nav-link.active {
+  text-decoration: underline;
+}

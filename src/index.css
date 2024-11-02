@@ -1,0 +1,9 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* styles.css */
+.form-selectt {
+  width: 100%; /* Ensures select takes full width of its container */
+  max-width: 100%; /* Ensures select does not exceed container width */
+}
